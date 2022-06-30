@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: print buye values of char, int, long int, long long int, and float
+ * Description: print buye values of char, int, long int, long long int, float
  *
  * Return: set to 0
  */
