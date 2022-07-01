@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 #include <time.h>
 
-/* more headers goes there */
+/* Main - Enter here */
 
-
-
-/* betty style doc for function main goes there */
+/*  more headers goes there */
+#include <stdio.h>
+/*  betty style doc for function main goes there */
 
 int main(void)
 {
@@ -18,7 +17,7 @@ int main(void)
 	/* your code goes there */
 	if (n < 0)
 	{
-		printf("%d is negative \n", n);
+		printf("%d is negative\n", n);
 	}
 	else if (n == 0)
 	{
