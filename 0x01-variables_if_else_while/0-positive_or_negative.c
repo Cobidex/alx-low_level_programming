@@ -3,17 +3,18 @@
 #include <time.h>
 
 /**
- * Main - Enter here
+ * main - determine if number is positive or negative
  *
- * Description: to output whether positive or negative
+ * Description: code will assign a random number to a variable n each time
+ * it is executed.
  *
- * more headers goes there
- *
- * Return: set to zero
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
+
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
