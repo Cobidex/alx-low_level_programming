@@ -10,10 +10,9 @@
  */
 int main(void)
 {
-	int a, z;
+	int a;
 
 	a = 97;
-	z = 122;
 	for (a = 97; a <= 122; a++)
 	putchar(a);
 	return (0);
