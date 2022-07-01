@@ -14,6 +14,7 @@ int main(void)
 
 	a = 97;
 	for (a = 97; a <= 123; a++)
-	putchar(10);
+		putchar(a);
+	putchar(0);
 	return (0);
 }
