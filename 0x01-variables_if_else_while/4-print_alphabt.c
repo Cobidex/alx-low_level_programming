@@ -10,16 +10,18 @@
  */
 int main(void)
 {
-	int a = 97;
+	int a;
 
-	while (a < 123)
+	a = 97;
+	for (a = 97; a < 123; a++)
 	{
-		if (a != 101 && a != 113)
+		if (a == 101 || a == 113)
 		{
-		putchar(a);
 		a += 1;
 		}
-		putchar(10);
+		putchar(a);
 	}
+	putchar(10);
+
 	return (0);
 }
