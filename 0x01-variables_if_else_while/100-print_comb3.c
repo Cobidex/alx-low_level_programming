@@ -1,36 +1,46 @@
 #include <stdio.h>
 
-/* 
- * main - print double digit combo
+/**
+ * main - output all possible combinations
  *
- * Description: print double digit combos
+ * Description: remove all similar combinations using if statements
+ * and while statements
  *
- *
- * Return: Always 0 (Success)
+ * Return: set to 0 if successful
  */
-
 int main(void)
 {
-	int i, j;
+	int a, b;
 
-
-	i = 48;
-	j = 48;
-
-	while (i < 58)
+	a = 48;
+	b = 49;
+	while (a < 58)
 	{
-		j = i + 1;
-		while (j < 58)
+		while (b < 58)
 		{
-			putchar(i);
-			putchar(j);
-																				if (i < 56 || j < 57)
-																				{
-																				putchar(48);																putchar(32);
-																				}
-			j++;
+			if (a == 49 & b == 48)
+				b++;
+			if (a == 50 & b == 48)
+				b = b + 2;
+			if (a == 51 & b == 48)
+				b = b + 3;
+			if (a == 52 & b == 48)
+				b = b + 4;
+			if (a == 53 & b == 48)
+				b = b + 5;
+			if (a == 54 & b == 48)
+				b = b + 6;
+			if (a == 55 & b == 48)
+				b = b + 7;
+			if (a == 56 & b == 48)
+				b = b + 8;
+			b++;
+			putchar(a);
+			putchar(b);
 		}
-		i++;
+		a++;
+		putchar(a);
+		putchar(b);
 	}
 	putchar(10);
 	return (0);
