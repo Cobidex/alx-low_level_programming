@@ -14,8 +14,9 @@ int main(void)
 	a = 0;
 	for (a = 0; a < 10; a++)
 	{
-		printf("%d\n", a);
+		printf("%d", a);
 		a += 1;
 	}
+	putchar(10);
 	return (0);
 }
