@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
+ * main - output numbers
  *
+ * Description: print out using only putchar
  *
- * Description: print single digit numbers using putchar
- *
- *
- * Return: Always 0 if success
+ * Return: set to 0 if success
  */
-
 int main(void)
 {
 	int a;
