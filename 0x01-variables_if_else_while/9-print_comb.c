@@ -12,15 +12,15 @@ int main(void)
 	int a;
 
 	a = 48;
-	while (a <= 57)
+	while (a < 58)
 	{
 		putchar(a);
 		if (a != 57)
 		{
 			putchar(44);
 			putchar(32);
-			a += 1;
 		}
+		a += 1;
 	}
 	putchar(10);
 	return (0);
