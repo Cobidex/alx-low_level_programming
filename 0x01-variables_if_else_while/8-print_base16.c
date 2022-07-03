@@ -1,28 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - print the letters of the alphabet
+ * main - print hexadecimal
  *
+ * Description: print numbers 0 - 9 then a -b
  *
- * Description: print the letters of the alphabet except e, q
- *
- *
- * Return: Always 0 (Success)
+ * Return: set to 0 if success
  */
-
-
 int main(void)
 {
-	int i = 0;
+	int a;
 
-	while (i < 48)
-	{
-		if (i < 10)
-			putchar(i + '0');
-		else if (i > 41)
-			putchar(i - 10 + 'A');
-			i++;
-	}
+	a = 48;
+	for (a = 48; a < 57; a++)
+		putchar(a);
+	for (a = 97; a < 103; a++)
+		putchar(a);
 	putchar(10);
 	return (0);
 }
