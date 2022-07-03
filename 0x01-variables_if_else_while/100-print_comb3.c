@@ -35,12 +35,12 @@ int main(void)
 			if (a == 56 && b == 48)
 				b = b + 8;
 			b++;
-			putchar(a);
-			putchar(b);
 		}
-		a++;
 		putchar(a);
 		putchar(b);
+		putchar(44);
+		putchar(32);
+		a++;
 	}
 	putchar(10);
 	return (0);
