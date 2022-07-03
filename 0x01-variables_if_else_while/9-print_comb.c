@@ -1,31 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
+ * main - print out combinations of integers
  *
+ * Description: print with only putchar
  *
- * Description: print single digit numbers with commas
- *
- *
- * Return: Always 0 (Success)
+ * Return: set to 0 if successful
  */
-
 int main(void)
 {
-	int i;
+	int a;
 
-	i = 48;
-
-	while (i < 58)
+	a = 48;
+	for (a = 48; a < 57; a++)
 	{
-		putchar(i);
-		if (i != 57)
-		{
-			putchar(44);
-													putchar(32);
-												}
-		i++;
+		putchar(a);
+		putchar(44);
 	}
+	putchar(57);
 	putchar(10);
 	return (0);
 }
