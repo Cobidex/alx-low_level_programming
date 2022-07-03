@@ -12,12 +12,16 @@ int main(void)
 	int a;
 
 	a = 48;
-	for (a = 48; a < 57; a++)
+	while (a <= 57)
 	{
 		putchar(a);
-		putchar(44);
-		putchar(32);
+		if (a != 57)
+		{
+			putchar(44);
+			putchar(32);
+			a += 1;
+		}
 	}
-	putchar(57);
+	putchar(10);
 	return (0);
 }
