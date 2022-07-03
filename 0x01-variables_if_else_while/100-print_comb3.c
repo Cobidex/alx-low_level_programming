@@ -16,7 +16,7 @@ int main(void)
 	b = 49;
 	while (a < 58)
 	{
-		while (b < 58)
+		while (a < 58 && b < 58)
 		{
 			if (a == 49 && b == 48)
 				b++;
