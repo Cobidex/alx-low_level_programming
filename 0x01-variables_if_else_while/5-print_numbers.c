@@ -5,18 +5,18 @@
  *
  * Description: print single digit numbers
  *
- * Return: Always 0
+ * Return: Always 0 for success
  */
 int main(void)
 {
-	int i;
+	int a;
 
-	i = 48;
-	while (i < 58)
-		{
-			putchar(i);
-			i += 1;
-		}
+	a = 0;
+	for (a == 0; a < 10; a++)
+	{
+		putchar(a);
+		a += 1;
+	}
 	putchar(10);
 	return (0);
 }
