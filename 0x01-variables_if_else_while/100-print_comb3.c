@@ -13,9 +13,10 @@ int main(void)
 	int a, b;
 
 	a = 48;
-	b = 49;
+	b = 48;
 	while (a < 58)
 	{
+		b = a + 1;
 		while (b < 58)
 		{
 			putchar(a);
