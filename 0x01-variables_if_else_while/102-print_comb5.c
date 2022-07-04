@@ -12,35 +12,29 @@ int main(void)
 	int a, b, c, d;
 
 	a = 48;
-	while (a < 58)
+	for (a = 48; a < 58; a++)
 	{
-		b = 48;
-		while (b < 58)
+		for (b = 48; a < 58, b < 58; b++)
 		{
-			c = a;
 			d = b + 1;
-			while (c < 58)
+			for (c = a; c < 58; c++)
 			{
-				while (d < 58)
+				for (d = b + 1; d < 58; d++)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(32);
 					putchar(c);
 					putchar(d);
-					if (a < 57 || b < 56 || c < 57 || d < 57)
+					if ((a < 57) || (b < 56))
 					{
 						putchar(44);
 						putchar(32);
 					}
-					d++;
 				}
 				d = 48;
-				c++;
 			}
-			b++;
 		}
-		a++;
 	}
 	putchar(10);
 	return (0);
