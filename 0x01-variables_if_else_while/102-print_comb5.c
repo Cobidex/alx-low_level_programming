@@ -12,21 +12,15 @@ int main(void)
 	int a, b, c, d;
 
 	a = 48;
-	b = 48;
-	c = 48;
-	d = 48;
 	while (a < 58)
 	{
-		b = a + 1;
-		c = a + 2;
-		d = a + 3;
+		b = 48;
 		while (b < 58)
 		{
-			c = b + 1;
-			d = b + 2;
+			c = a;
+			d = b + 1;
 			while (c < 58)
 			{
-				d = c + 1;
 				while (d < 58)
 				{
 					putchar(a);
@@ -41,6 +35,7 @@ int main(void)
 					}
 					d++;
 				}
+				d = 48;
 				c++;
 			}
 			b++;
