@@ -12,13 +12,14 @@ int main(void)
 	int a, b, c, d;
 
 	a = 48;
+	d = a + 1;
 	for (a = 48; a < 58; a++)
 	{
 		for (b = 48; b < 58; b++)
 		{
 			for (c = a; c < 58; c++)
 			{
-				for (d = b + 1; d < 58; d++)
+				while (d < 58)
 				{
 					putchar(a);
 					putchar(b);
@@ -31,8 +32,9 @@ int main(void)
 						putchar(32);
 					}
 				}
-				d = 48;
+				d++;
 			}
+			d = 48;
 		}
 	}
 	putchar(10);
