@@ -33,15 +33,15 @@ int main(void)
 						putchar(44);
 						putchar(32);
 					}
+					d++;
 				}
-				d++;
+				c++;
+				d = 48;
 			}
-			c++;
-			d = 48;
+			b++;
 		}
-		b++;
+		a++;
 	}
-	a++;
 	putchar(10);
 	return (0);
 }
