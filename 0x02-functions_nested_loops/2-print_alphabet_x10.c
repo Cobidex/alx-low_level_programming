@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - print out lower case 10 times
- *
- * Description: print using while loop
+ * print_alphabet_x10 - print out lower case 10 times
  *
  * Return: void
  */
@@ -11,8 +9,8 @@ void print_alphabet_x10(void)
 {
 	int a, n;
 
-	n = 0;
-	for (n = 0; n < 11; n++)
+	n = 1;
+	for (n = 1; n < 11; n++)
 	{
 		a = 97;
 		while (a < 123)
