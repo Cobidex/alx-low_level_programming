@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char func[9] = "_putchar";
+	char func[] = "_putchar";
 	int a = 0;
 
 	for (a = 0; a < 8; a++)
