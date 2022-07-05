@@ -1,34 +1,12 @@
-/* declaration of prototype */
 int _putchar(char a);
-
-/**
- * _putchar - outputs single char
- * @a: the character to output
- *
- * Return: 1 if success
- */
-int _putchar(char a)
-{
-	return (write(1, &c, 1));
-}
-
-/* prototype of print_alphabet function */
 void print_alphabet(void);
-
-/**
- * print_alphabet - print lower case alphabets
- *
- * Return: 0 if successful
- */
-int print_alphabet()
-{
-	int a;
-
-	a = 97;
-	for (a = 97; a < 123; a++)
-		_putchar(a);
-	_putchar(10);
-	return (0);
-}
-
-
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
