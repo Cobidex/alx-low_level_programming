@@ -1,20 +1,4 @@
-#include <unistd.h>
-
-void print_alphabet(void);
-
-/**
- * main - begin here
- *
- * Description: outputs above function
- *
- * Return: set to 0
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+#include <main.h>
 
 /**
  * print_alphabet - print out lower case
@@ -33,5 +17,5 @@ void print_alphabet(void)
 		_putchar(a);
 		a++;
 	}
-	_putchar(10);
+	_putchar(\n);
 }
