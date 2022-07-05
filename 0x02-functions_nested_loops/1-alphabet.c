@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 
 void print_alphabet(void);
 
@@ -30,8 +30,8 @@ void print_alphabet(void)
 	a = 97;
 	while (a < 123)
 	{
-		putchar(a);
+		_putchar(a);
 		a++;
 	}
-	putchar(10);
+	_putchar(10);
 }
