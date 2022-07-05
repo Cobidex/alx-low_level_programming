@@ -8,9 +8,9 @@
  */
 int print_sign(int n)
 {
-	if (n > 48)
+	if (n > 48 && n < 58)
 		return (1);
-	if (n < 48)
+	if (!(n < 47 && n < 58))
 		return (-1);
 	if (n == 48)
 		return (0);
