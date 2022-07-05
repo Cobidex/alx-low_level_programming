@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	char func[] = "_putchar";
+	char func[9] = "_putchar";
 	int a = 0;
 
 	for (a = 0; a < 8; a++)
 	{
 		_putchar(func[a]);
 	}
-	_putchar(10);
+	_putchar('\n');
 	return (0);
 }
