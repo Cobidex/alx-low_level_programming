@@ -1,8 +1,5 @@
 #include <unistd.h>
 
-/* declaration of prototype of _putchar */
-int _putchar(char a);
-
 /**
  * _putchar - outputs characters
  * @a: the character to print
