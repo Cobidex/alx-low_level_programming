@@ -2,16 +2,16 @@
 
 /**
  * _abs - print absolute
- * @a: number
+ * @int: number
  *
  * Return: return absolute value
  */
-int _abs(a)
+int _abs(int)
 {
-	if (a < 0)
-		return (-a);
-	else if (a > 0)
-		return (a);
+	if (int < 0)
+		return (-int);
+	else if (int > 0)
+		return (int);
 	else
-		return (a);
+		return (int);
 }
