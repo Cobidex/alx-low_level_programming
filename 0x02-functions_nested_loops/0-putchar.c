@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <main.h>
-
-int _putchar(char a);
+#include "_putchar.h"
 
 /**
  * main - output a string
@@ -19,17 +16,6 @@ int main(void)
 	{
 		_putchar(func[a]);
 	}
-	_putchar('\n');
+	_putchar(10);
 	return (0);
-}
-
-/**
- * _putchar - prints out a character
- * @a: the characters to print out
- *
- * Return: 1 on success
- */
-int _putchar(char a)
-{
-	return (write(1, &a, 1));
 }
