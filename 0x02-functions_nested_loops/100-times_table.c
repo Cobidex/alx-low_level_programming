@@ -17,8 +17,14 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				ab = a * b;
-				if (ab == 0)
+				if (ab == 0 && b == n)
 					_putchar('0');
+				if (ab == 0 && b < n)
+				{
+					_putchar('0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				else if (ab < 10)
 				{
 					_putchar(',');
