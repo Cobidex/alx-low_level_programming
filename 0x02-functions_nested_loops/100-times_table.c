@@ -10,6 +10,7 @@ void print_times_table(int n)
 {
 	int b, nb;
 
+	b = 0;
 	nb = n * b;
 	if (n < 16 || n < 0)
 	{
