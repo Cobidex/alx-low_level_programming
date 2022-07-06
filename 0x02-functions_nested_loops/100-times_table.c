@@ -34,7 +34,7 @@ void print_times_table(int n)
 					_putchar((ab / 10) + '0');
 					_putchar(ab % 10 + '0');
 				}
-				else if (ab <= 100 && ab < 1000)
+				else if (ab >= 100 && ab < 1000)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -43,8 +43,8 @@ void print_times_table(int n)
 					_putchar((ab / 10) % 10 + '0');
 					_putchar(ab % 10 + '0');
 				}
-				_putchar('\n');
 			}
+			_putchar('\n');
 		}
 	}
 }
