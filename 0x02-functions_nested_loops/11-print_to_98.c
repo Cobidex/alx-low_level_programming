@@ -4,10 +4,9 @@
  * print_to_98 - print towards n
  * @n: integer
  *
- * Return: set to 0
+ * Return: set to void
  */
 void print_to_98(int n)
 {
 	_putchar(n);
-	return (0);
 }
