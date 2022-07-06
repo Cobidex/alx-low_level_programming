@@ -10,14 +10,13 @@
  */
 int main(void)
 {
-	int a, b, max, sum;
+	int num, sum;
 
-	a = 3;
-	b = 5;
-	for (max = 0; max < 1024; max++)
+	sum = 0;
+	for (num = 0; num < 1024; num++)
 	{
-		if (max % a == 0 || max % b == 0)
-			sum = sum + max;
+		if ((num % 3 == 0) || (num % 5 == 0))
+			sum = sum + num;
 	}
 	printf("%d\n", sum);
 	return (0);
