@@ -8,7 +8,7 @@
  */
 void print_times_table(int n)
 {
-	int n, b, nb;
+	int b, nb;
 
 	nb = n * b;
 	if (n < 16 || n < 0)
