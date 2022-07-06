@@ -3,7 +3,7 @@
 /**
  * times_table - print 9 times table
  *
- * Return: set to zero
+ * Return: set to void
  */
 void times_table(void)
 {
@@ -11,5 +11,4 @@ void times_table(void)
 
 	a = 50;
 	_putchar(a);
-	return (0);
 }
