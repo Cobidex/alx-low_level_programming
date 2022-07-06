@@ -10,23 +10,15 @@
  */
 int main(void)
 {
-	int a, b, c;
-	int multiples_of_3, multiples_of_5;
-	int total_sum_of_3, total_sum_of_5;
-	int Grand_sum, c_max;
+	int a, b, max, sum;
 
 	a = 3;
 	b = 5;
-	c_max = 342;
-	c = 1;
-	for (c = 1; c < c_max; c++)
+	for (max = 0; max < 1024; max++)
 	{
-		multiples_of_3 = a * c;
-		multiples_of_5 = b * c;
-		total_sum_of_3 = multiples_of_3 + a * c;
-		total_sum_of_5 = multiples_of_5 + b * c;
-		Grand_sum = total_sum_of_3 + total_sum_of_5;
+		if (max % a == 0 || max % b == 0)
+			sum = sum + max;
 	}
-	printf("%d\n", Grand_sum);
+	printf("%d\n", sum);
 	return (0);
 }
