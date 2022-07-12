@@ -12,7 +12,7 @@ int _strlen(char *s)
 	int n, a, b;
 
 	a = 0;
-	for (n = 1; b != '\0'; n++)
+	for (n = 0; b != '\0'; n++)
 	{
 		b = *(s + n);
 		a++;
