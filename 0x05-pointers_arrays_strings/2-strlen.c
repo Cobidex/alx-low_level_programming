@@ -19,5 +19,8 @@ int _strlen(char *s)
 		a++;
 		n++;
 	}
-	return (a);
+	if (a == 0)
+		return (0);
+	if (a != 0)
+		return (a);
 }
