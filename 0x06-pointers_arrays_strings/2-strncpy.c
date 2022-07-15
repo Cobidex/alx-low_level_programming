@@ -20,7 +20,6 @@ char *_strncpy(char *dest, char *src, int n)
 		temp[a] = src[a];
 		a++;
 	}
-	temp[a] = '\0';
 	dest = temp;
 	return (dest);
 }
