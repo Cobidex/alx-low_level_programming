@@ -16,10 +16,12 @@ int _strcmp(char *s1, char *s2)
 	{
 		diff = s1[a] - s2[a];
 		if (diff < 0)
-			return (diff);
+			break;
 		if (diff > 0)
-			return (diff);
+			break;
 		if (diff == 0)
-			a++;
+			return (diff);
+		a++;
 	}
+	return (diff);
 }
