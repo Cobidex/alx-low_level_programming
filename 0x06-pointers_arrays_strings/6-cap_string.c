@@ -17,8 +17,11 @@ char *string_toupper(char *p)
 		if (p[a] == '.')
 		{
 			a++;
-			if (p[a] >= 97 && p[a] <= 122)
-				p[a] -= 32;
+			if (p[a] != ' ')
+			{
+				if (p[a] >= 97 && p[a] <= 122)
+					p[a] -= 32;
+			}
 		}
 		if (p[a] == ' ')
 		{
