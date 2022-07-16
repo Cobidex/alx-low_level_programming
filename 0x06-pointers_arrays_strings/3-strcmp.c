@@ -14,12 +14,14 @@ int _strcmp(char *s1, char *s2)
 	a = 0;
 	while (s1[a])
 		a++;
+	b = 0;
 	while (s2[b])
 		b++;
 	if (a <= b)
 		shr = a;
 	else
 		shr = b;
+	c = 0;
 	while (c <= shr)
 	{
 		if (s1[c] == s2[c])
