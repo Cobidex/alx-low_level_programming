@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - upper case
- * p: pointer
+ * @p: pointer
  * Return: char
  */
 
@@ -13,9 +13,7 @@ char *string_toupper(char *p)
 	while (p[a])
 	{
 		if (p[a] >= 97 && p[a] <= 122)
-		{
 			p[a] -= 32;
-		}
 		a++;
 	}
 	return (p);
