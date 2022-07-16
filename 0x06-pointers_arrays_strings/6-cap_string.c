@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * string_toupper - upper case
+ * cap_string - upper case
  * @p: pointer
  * Return: char
  */
 
-char *string_toupper(char *p)
+char *cap_string(char *p)
 {
 	int a = 0;
 
