@@ -9,18 +9,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int a, b;
+	int a, diff;
 
 	a = 0;
-	b = 0;
 	while (s1[a])
-		a++;
-	while (s2[b])
-		b++;
-	if (a < b)
-		return (-15);
-	else if (a > b)
-		return (15);
-	else
-		return (0);
+	{
+		diff = s1[a] - s2[a];
+		if (diff < 0)
+			return (diff);
+		if (diff > 0)
+			return (diff);
+		if (diff == 0)
+			a++;
+	}
 }
