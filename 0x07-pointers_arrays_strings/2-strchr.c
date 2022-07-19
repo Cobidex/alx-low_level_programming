@@ -20,10 +20,7 @@ char *_strchr(char *s, char c)
 			p =  (s + a);
 			return (p);
 		}
-		if (s[a] == '\0')
-		{
-			return ('\0');
-		}
 		a++;
 	}
+	return ('\0');
 }
