@@ -10,7 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	char *p;
-	unsigned int a;
+	int a;
 
 	a = 0;
 	while (s[a])
