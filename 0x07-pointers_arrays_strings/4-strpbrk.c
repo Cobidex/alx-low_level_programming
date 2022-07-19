@@ -9,7 +9,6 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *p;
 	int a, b, c, d;
 
 	a = 0;
@@ -23,8 +22,8 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[c] == accept[d])
 			{
-				p = (s + c);
-				return (p);
+				s = (s + c);
+				return (s);
 			}
 		}
 	}
