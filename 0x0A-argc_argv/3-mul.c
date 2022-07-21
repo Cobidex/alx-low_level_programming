@@ -6,7 +6,7 @@
  * main - multiplies two numbers
  * @argc: count
  * @argv: vector
- * Return: 0
+ * Return: 1
  */
 
 int main(int argc, char *argv[])
@@ -24,5 +24,5 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 	}
-	return (0);
+	return (1);
 }
