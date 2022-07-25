@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *p;
-	int a;
+	unsigned int a;
 
 	if (size == 0)
 	{
@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 	}
 	for (a = 0; a < size; a++)
 	{
-		p[a] = 'c';
+		p[a] = c;
 	}
 	return (p);
 }
