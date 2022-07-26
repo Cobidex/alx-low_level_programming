@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	for (a = 0; a < 5; a++)
+	for (a = 0; a < 5 && num >= 0; a++)
 	{
 		while (change[a] <= num)
 		{
