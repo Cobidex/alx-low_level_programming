@@ -32,11 +32,8 @@ int main(int argc, char *argv[])
 		{
 			num -= change[a];
 			cents++;
-			if (num == 0)
-			{
-				printf("%d\n", cents);
-			}
 		}
 	}
+	printf("%d\n", cents);
 	return (0);
 }
