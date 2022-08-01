@@ -9,10 +9,10 @@ int main(void)
 {
 	char *p = __FILE__;
 
-	for (p = 0; *p != '\0'; p++)
+	for (p; *p != '\0'; p++)
 	{
 		_putchar(*p);
-		_putchar('\n');
+		_putchar('\n')
 	}
 	return (0);
 }
