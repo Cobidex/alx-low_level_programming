@@ -8,9 +8,8 @@
 int main(void)
 {
 	char *p = __FILE__;
-	int a;
 
-	for (a = 0; *p != '\0'; a++)
+	for (p = 0; *p != '\0'; p++)
 	{
 		_putchar(*p);
 		_putchar('\n');
