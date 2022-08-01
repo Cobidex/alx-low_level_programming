@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -8,12 +8,6 @@
 
 int main(void)
 {
-	char *p = __FILE__;
-
-	for (p; *p != '\0'; p++)
-	{
-		_putchar(*p);
-	}
-	_putchar('\n');
+	printf("%s\n", __FILE__);
 	return (0);
 }
