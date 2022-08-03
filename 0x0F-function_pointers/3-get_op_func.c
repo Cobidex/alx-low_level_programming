@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdlib.h>
 #include "3-calc.h"
 #include <string.h>
 /**
