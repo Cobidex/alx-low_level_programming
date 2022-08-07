@@ -1,15 +1,19 @@
 #include "main.h"
 
+/**
+ * times_table - prints n times table
+ * Return: void
+ */
+
 void times_table(void)
 {
 	int i = 0, j, product = 0;
 
 	while (i < 10)
 	{
-
+		j = 0;
 		while (j < 10)
 		{
-			j = 0;
 			product = i * j;
 			if (product < 10)
 			{
