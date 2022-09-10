@@ -9,39 +9,42 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a, b, c, d, count = 1;
 
-	a = 48;
-	while (a < 58)
+	a = 0;
+	while (a < 10)
 	{
-		b = 58;
-		while (b < 58)
+		b = 0;
+		while (b < 10)
 		{
-			c = a;
-			d = b + 1;
-			while (c < 58)
+			c = 0;
+			while (c < 10)
 			{
-				while (d < 58)
+				d = 0;
+				while (d < 10)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(32);
-					putchar(c);
-					putchar(d);
-					if (a < 57 || b < 56 || c < 57 || d < 57)
+					if (a <= c && b < d)
 					{
-						putchar(44);
-						putchar(32);
+						_putchar(a + '0');
+						_putchar(b + '0');
+						_putchar(' ');
+						_putchar(c + '0');
+						_putchar(d + '0');
+						if (count < 9899)
+						{
+							_putchar(',');
+							_putchar(' ');
+						}
 					}
+					++count;
 					d++;
 				}
 				c++;
-				d = 48;
 			}
 			b++;
 		}
 		a++;
 	}
-	putchar(10);
+	_putchar('\n');
 	return (0);
 }
