@@ -25,15 +25,15 @@ int main(void)
 				{
 					if (a <= c && b < d)
 					{
-						_putchar(a + '0');
-						_putchar(b + '0');
-						_putchar(' ');
-						_putchar(c + '0');
-						_putchar(d + '0');
+						putchar(a + '0');
+						putchar(b + '0');
+						putchar(' ');
+						putchar(c + '0');
+						putchar(d + '0');
 						if (count < 9899)
 						{
-							_putchar(',');
-							_putchar(' ');
+							putchar(',');
+							putchar(' ');
 						}
 					}
 					++count;
@@ -45,6 +45,6 @@ int main(void)
 		}
 		a++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
