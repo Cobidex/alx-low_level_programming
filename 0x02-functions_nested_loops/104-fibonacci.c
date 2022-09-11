@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	unsigned long a = 1, b = 1, c, count = 1;
+	double long a = 1, b = 1, c, count = 1;
 
 	while (count < 98)
 	{
 		c = b;
 		b += a;
 		a = c;
-		printf("%lu, ", a);
+		printf("%.lf, ", a);
 		++count;
 	}
-	printf("%lu\n", b);
+	printf("%.lf\n", b);
 	return (0);
 }
