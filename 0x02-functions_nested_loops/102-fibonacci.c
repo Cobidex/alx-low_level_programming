@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long unsigned int a = 1, b = 1, c, count = 1;
+	unsigned long a = 1, b = 1, c, count = 1;
 
 	while (count < 50)
 	{
