@@ -16,11 +16,8 @@ int main(void)
 		b += a;
 		a = c;
 		if (!(b % 2))
-		{
 			sum_even += b;
-			printf("%u, ", sum_even);
-		}
 	}
-	putchar('\n');
+	printf("%u\n", sum_even);
 	return (0);
 }
