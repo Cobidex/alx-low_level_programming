@@ -15,9 +15,9 @@ int main(void)
 		c = b;
 		b += a;
 		a = c;
-		printf("%u, ", a);
+		printf("%lu, ", a);
 		++count;
 	}
-	printf("%u\n", b);
+	printf("%lu\n", b);
 	return (0);
 }
