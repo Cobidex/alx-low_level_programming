@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	unsigned long long num = 612852475143, prime = 3, highest_prime, a;
-	unsigned long long remainder;
+	unsigned long num = 612852475143, prime = 3, highest_prime, a;
+	unsigned long remainder;
 
 	while (prime < (num / 2))
 	{
@@ -29,6 +29,6 @@ int main(void)
 		}
 		++prime;
 	}
-	printf("%llu\n", highest_prime);
+	printf("%lu\n", highest_prime);
 	return (0);
 }
