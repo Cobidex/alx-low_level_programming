@@ -15,9 +15,9 @@ int main(void)
 		c = b;
 		b += a;
 		a = c;
-		printf("%.lf, ", a);
+		printf("%.Lf, ", a);
 		++count;
 	}
-	printf("%.lf\n", b);
+	printf("%.Lf\n", b);
 	return (0);
 }
