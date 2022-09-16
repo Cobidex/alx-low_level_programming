@@ -11,12 +11,13 @@ void rev_string(char *s)
 {
 	char c;
 	char *rev = s;
-	int i = 0, j = 0;
+	int i = 0, j = 0, k;
 
 	while (rev[i])
 		i++;
 	i--;
-	while (j <= ((i / 2) + 1))
+	k = i;
+	while (j < (k / 2))
 	{
 		c = s[j];
 		s[j] = rev[i];
