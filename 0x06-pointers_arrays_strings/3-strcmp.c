@@ -20,7 +20,7 @@ int _strcmp(char *s1, char *s2)
 			n++;
 			continue;
 		}
-		if (s1[n] < s[n])
+		if (s1[n] < s2[n])
 			return (-15);
 		else
 			return (15);
