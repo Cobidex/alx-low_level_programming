@@ -15,14 +15,14 @@ char *rot13(char *p)
 	{
 		if (p[a] >= 'a' && p[a] <= 'z')
 		{
-			if (p[a] <= 'n')
+			if (p[a] <= 'm')
 				p[a] += 13;
 			else
 				p[a] -= 13;
 		}
 		if (p[a] >= 'A' && p[a] <= 'Z')
 		{
-			if (p[a] <= 'N')
+			if (p[a] <= 'M')
 				p[a] += 13;
 			else
 				p[a] -= 13;
