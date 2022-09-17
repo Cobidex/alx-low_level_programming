@@ -4,37 +4,26 @@
  * _strcmp - compare strings
  * @s1: first string
  * @s2: second string
- * Return: 1 if success and 0 if not
+ * Return: 1, 0 or -1
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, c, shr, diff;
+	int i = 0, n = 0;
 
-	a = 0;
-	while (s1[a])
-		a++;
-	b = 0;
-	while (s2[b])
-		b++;
-	if (a <= b)
-		shr = a;
-	else
-		shr = b;
-	c = 0;
-	while (c <= shr)
+	while (s1[i])
+		i++;
+	while (n <= i)
 	{
-		if (s1[c] == s2[c])
+		if (s1[n] == s2[n])
 		{
-			c++;
+			n++;
 			continue;
 		}
+		if (s1[n] < s[n])
+			return (-15);
 		else
-		{
-			diff = s1[c] - s2[c];
-			break;
-		}
-		c++;
+			return (15);
 	}
-	return (diff);
+	return (0);
 }
