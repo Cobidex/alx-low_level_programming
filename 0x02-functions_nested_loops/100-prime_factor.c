@@ -16,6 +16,6 @@ int main(void)
 			num /= div;
 		div++;
 	}
-	printf("%ld\n", --div);
+	printf("%ld\n", div - 1);
 	return (0);
 }
