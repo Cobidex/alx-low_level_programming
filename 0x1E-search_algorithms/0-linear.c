@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "search_algos.h"
 
 /**
  * linear_search - returns first index of value
