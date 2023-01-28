@@ -10,15 +10,12 @@
 int main(void)
 {
     int array[] = {
-        10, 15, 20, 23, 24, 80, 100, 101, 113, 130, 180, 200
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     };
     size_t size = sizeof(array) / sizeof(array[0]);
 
-    printf("Found %d at index: %d\n\n", 23, binary_search(array, size, 23));
-    printf("Found %d at index: %d\n\n", 180, binary_search(array, size, 180));
-    printf("Found %d at index: %d\n\n", 80, binary_search(array, size, 80));
-    printf("Found %d at index: %d\n\n", 10, binary_search(array, 5, 10));
-    printf("Found %d at index: %d\n\n", 81, binary_search(array, 8, 81));
-    printf("Found %d at index: %d\n", 22, binary_search(array, size, 22));
+    printf("Found %d at index: %d\n\n", 2, binary_search(array, size, 2));
+    printf("Found %d at index: %d\n\n", 5, binary_search(array, 5, 5));
+    printf("Found %d at index: %d\n", 999, binary_search(array, size, 999));
     return (EXIT_SUCCESS);
 }

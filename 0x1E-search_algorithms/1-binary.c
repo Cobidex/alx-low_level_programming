@@ -13,11 +13,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t indicator = -1, i_half, a_half, i;
 
 	i_half = (size - 1) / 2;
-	if (size % 2 == 0)
-		a_half = size / 2;
-	else
-		a_half = (size + 1) / 2;
-
+	a_half = size / 2;
 	if (a_half == 0)
 		if (value != array[0])
 			return (indicator);
