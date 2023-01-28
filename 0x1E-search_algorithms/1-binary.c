@@ -10,31 +10,44 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t indicator = -1, i_half, a_half, i;
-
-	i_half = (size - 1) / 2;
-	a_half = size / 2;
-	if (a_half == 0)
-		if (value != array[0])
-			return (indicator);
 	if (array)
+		return (_search(array, 0, size - 1, value));
+	return (-1);
+}
+
+/**
+ * _search - searches for value
+ * @array: int ordered array
+ * @left: the left-most index of the array
+ * @right: the right-most index of array
+ * @value: int searched for
+ * Return: -1 or index
+ */
+int _search(int *array, int left, int right, int value)
+{
+	int mid, i;
+
+	printf("Searching in array: ");
+	for (i = left; i < right; i++)
+		printf("%i, ", array[i]);
+	printf("%i\n", array[i]);
+	mid = (right + left) / 2;
+	if (right - left == 0)
 	{
-		printf("Searching in array: ");
-		for (i = 0; i < size - 1; i++)
-			printf("%i, ", array[i]);
-		printf("%i\n", array[i]);
-		if (value < array[i_half])
-			indicator = binary_search(array, a_half, value);
-		else if (value > array[i_half])
-		{
-			array += i_half;
-			indicator = binary_search(array, a_half, value);
-		}
-		else
-		{
-			indicator = i_half;
-			return (indicator);
-		}
+		if (array[mid] != value)
+			return (-1);
 	}
-	return (indicator);
+
+	if (array[mid] < value)
+	{
+		left = mid + 1;
+		return (_search(array, left, right, value));
+	}
+	else if (array[mid] > value)
+	{
+		right = mid - 1;
+		return (_search(array, left, right, value));
+	}
+	else
+		return (mid);
 }
