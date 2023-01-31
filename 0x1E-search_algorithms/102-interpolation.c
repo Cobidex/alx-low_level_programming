@@ -37,10 +37,10 @@ int inter_search(int *array, size_t size, int left, int right, int value)
 	}
 	if (left - right == 0)
 	{
-		if (array[left] != value)
+		if (array[pos] != value)
 			return (-1);
 		else
-			return (left);
+			return (pos);
 	}
 
 	printf("Value checked array[%li] = [%i]\n", pos, array[pos]);
