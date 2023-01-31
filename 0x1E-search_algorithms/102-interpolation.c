@@ -26,29 +26,24 @@ int interpolation_search(int *array, size_t size, int value)
  */
 int inter_search(int *array, size_t size, int left, int right, int value)
 {
-	size_t mid;
-	size_t pos = left + (((double)(right - left) / (array[right] - array[left])) * (value - array[left]));
+	size_t diff = right - left, diff_a = array[right] - array[left];
+	size_t v_diff = value - array[left];
+	size_t pos = left + ((double)diff / diff_a * v_diff);
 
-	mid = (right + left) / 2;
-	if (mid >= size)
+	if (pos >= size)
 	{
-		printf("Value checked array[%li] is out of range\n", mid);
+		printf("Value checked array[%li] is out of range\n", pos);
 		return (-1);
 	}
-	if (right - left == 0)
-	{
-		if (array[mid] != value)
-			return (-1);
-	}
-	printf("Value checked array[%li] = [%i]\n", mid, array[mid]);
-	if (array[mid] == value)
-		return (mid);
-	if (array[mid] < value)
+	printf("Value checked array[%li] = [%i]\n", pos, array[pos]);
+	if (array[pos] == value)
+		return (pos);
+	if (array[pos] < value)
 	{
 		left = pos;
 		return (inter_search(array, size, left, right, value));
 	}
-	if (array[mid] > value)
+	if (array[pos] > value)
 	{
 		right = pos;
 		return (inter_search(array, size, left, right, value));
