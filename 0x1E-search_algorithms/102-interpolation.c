@@ -35,26 +35,28 @@ int inter_search(int *array, size_t size, int left, int right, int value)
 		printf("Value checked array[%li] is out of range\n", pos);
 		return (-1);
 	}
-	if (left - right == 0)
+	if (right - left == 1)
 	{
-		if (array[pos] != value)
+		if (array[right] != value)
 			return (-1);
 		else
+			return (right);
+	}
+	else
+	{
+		printf("Value checked array[%li] = [%i]\n", pos, array[pos]);
+		if (array[pos] == value)
 			return (pos);
+		if (array[pos] < value)
+		{
+			left = pos;
+			return (inter_search(array, size, left, right, value));
+		}
+		if (array[pos] > value && (left - right != 0))
+		{
+			right = pos;
+			return (inter_search(array, size, left, right, value));
+		}
+		return (-1);
 	}
-
-	printf("Value checked array[%li] = [%i]\n", pos, array[pos]);
-	if (array[pos] == value)
-		return (pos);
-	if (array[pos] < value)
-	{
-		left = pos;
-		return (inter_search(array, size, left, right, value));
-	}
-	if (array[pos] > value)
-	{
-		right = pos;
-		return (inter_search(array, size, left, right, value));
-	}
-	return (-1);
 }
