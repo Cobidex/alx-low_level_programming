@@ -1,25 +1,22 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints every second of every day
+ * jack_bauer - prints every minute in jack baurs day
  *
- * Return: set to zero if success
+ * Return: void.
  */
+
 void jack_bauer(void)
 {
 	int a, b, c, d;
 
-	a = 0;
-	while (a < 3)
+	for (a = 0; a < 3; a++)
 	{
-		b = 0;
-		while (b < 4)
+		for (b = 0; b < 4; b++)
 		{
-			c = 0;
-			while (c < 6)
+			for (c = 0; c < 6; c++)
 			{
-				d = 0;
-				while (d < 10)
+				for (d = 0; d < 10; d++)
 				{
 					_putchar(a + '0');
 					_putchar(b + '0');
@@ -27,12 +24,8 @@ void jack_bauer(void)
 					_putchar(c + '0');
 					_putchar(d + '0');
 					_putchar('\n');
-					d++;
 				}
-				c++;
 			}
-			b++;
 		}
-		a++;
 	}
 }
