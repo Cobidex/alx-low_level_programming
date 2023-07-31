@@ -6,26 +6,29 @@
  * Return: void.
  */
 
+void print_time(int time);
+
 void jack_bauer(void)
 {
-	int a, b, c, d;
+	int hours, mins;
 
-	for (a = 0; a < 3; a++)
+	for (hours = 0; hours < 24; hours++)
 	{
-		for (b = 0; b < 4; b++)
+		for (mins = 0; mins < 60; mins++)
 		{
-			for (c = 0; c < 6; c++)
-			{
-				for (d = 0; d < 10; d++)
-				{
-					_putchar(a + '0');
-					_putchar(b + '0');
-					_putchar(':');
-					_putchar(c + '0');
-					_putchar(d + '0');
-					_putchar('\n');
-				}
-			}
+			print_time(hours);
+			_putchar(':');
+			print_time(mins);
+			_putchar('\n');
 		}
 	}
+}
+
+
+
+
+void print_time(int time)
+{
+	_putchar(time / 10 + '0');
+	_putchar(time % 10 + '0');
 }
