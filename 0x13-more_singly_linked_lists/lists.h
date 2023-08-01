@@ -1,5 +1,13 @@
 #ifndef _HEADER_
 #define _HEADER_
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * struct listint_s - struct for the list nodes
+ * @n: integer
+ * @next: pointer to nex node
+ */
 typedef struct listint_s
 {
 	int n;
