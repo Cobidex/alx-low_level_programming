@@ -1,13 +1,24 @@
 #include "main.h"
+/**
+ * print_time - prints the time
+ *
+ * @time: either hour or min
+ *
+ * Return: void
+ */
+void print_time(int time)
+{
+	_putchar(time / 10 + '0');
+	_putchar(time % 10 + '0');
+}
+
+
 
 /**
  * jack_bauer - prints every minute in jack baurs day
  *
  * Return: void.
  */
-
-void print_time(int time);
-
 void jack_bauer(void)
 {
 	int hours, mins;
@@ -22,13 +33,4 @@ void jack_bauer(void)
 			_putchar('\n');
 		}
 	}
-}
-
-
-
-
-void print_time(int time)
-{
-	_putchar(time / 10 + '0');
-	_putchar(time % 10 + '0');
 }
