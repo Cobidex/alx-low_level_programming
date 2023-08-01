@@ -1,57 +1,75 @@
 #include "main.h"
 
 /**
- * print_times_table - prints n table
- * @n: integer
+ * print_value - prints the value
+ * @value: to be printed
  *
- * Return: set to 0 if successful
+ * Return: void
  */
+void print_value(int value)
+{
+	if (value / 100)
+	{
+		_putchar(value / 100 + '0');
+		_putchar((value / 10) % 10 + '0');
+		_putchar(value % 10 + '0');
+	}
+	else if (value / 10)
+	{
+		_putchar(' ');
+		_putchar(value / 10 + '0');
+		_putchar(value % 10 + '0');
+	}
+	else
+	{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(value + '0');
+	}
+}
+
+
+/**
+ * print_row - print the rows of the table
+ *
+ * @column: the current column to print
+ * @columns: total number of columns
+ *
+ * Return: void
+ */
+void print_row(int column, int columns)
+{
+	int index, value;
+
+	for (index = 0; index <= columns; index++)
+	{
+		value = column * index;
+		print_value(value);
+		if (index < columns)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
+}
+
+/**
+ * print_times_table - prints n times table
+ * @n: total number of columns
+ * Return: void
+ */
+
 void print_times_table(int n)
 {
-	int a, b, ab;
+	int row_num;
 
-	if (n < 16 && n >= 0)
+	if (n > 15 || n < 0)
 	{
-		for (a = 0; a <= n; a++)
-		{
-			for (b = 0; b <= n; b++)
-			{
-				ab = a * b;
-				if (ab == 0 && b == n)
-					_putchar('0');
-				if (ab == 0 && b < n)
-				{
-					_putchar('0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (ab < 10)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(ab % 10 + '0');
-				}
-				else if (ab >= 10 && ab < 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((ab / 10) + '0');
-					_putchar(ab % 10 + '0');
-				}
-				else if (ab >= 100 && ab < 1000)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((ab / 100) + '0');
-					_putchar((ab / 10) % 10 + '0');
-					_putchar(ab % 10 + '0');
-				}
-			}
-			_putchar('\n');
-		}
+		return;
+	}
+	for (row_num = 0; row_num <= n; row_num++)
+	{
+		print_row(row_num, n);
 	}
 }
