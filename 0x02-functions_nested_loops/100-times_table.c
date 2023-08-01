@@ -3,10 +3,11 @@
 /**
  * print_value - prints the value
  * @value: to be printed
+ * @index: current index of value
  *
  * Return: void
  */
-void print_value(int value)
+void print_value(int value, int index)
 {
 	if (value / 100)
 	{
@@ -16,14 +17,20 @@ void print_value(int value)
 	}
 	else if (value / 10)
 	{
-		_putchar(' ');
+		if (index)
+		{
+			_putchar(' ');
+		}
 		_putchar(value / 10 + '0');
 		_putchar(value % 10 + '0');
 	}
 	else
 	{
-		_putchar(' ');
-		_putchar(' ');
+		if (index)
+		{
+			_putchar(' ');
+			_putchar(' ');
+		}
 		_putchar(value + '0');
 	}
 }
@@ -44,7 +51,7 @@ void print_row(int column, int columns)
 	for (index = 0; index <= columns; index++)
 	{
 		value = column * index;
-		print_value(value);
+		print_value(value, index);
 		if (index < columns)
 		{
 			_putchar(',');
