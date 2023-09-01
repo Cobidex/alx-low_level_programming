@@ -28,8 +28,6 @@ char *cap_string(char *p)
 		{
 			if (p[a] == spc[b])
 			{
-				if (p[a] == spc[12])
-					p[a] = ' ';
 				a++;
 				if (p[a] >= 97 && p[a] <= 122)
 					p[a] -= 32;
