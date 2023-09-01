@@ -8,26 +8,19 @@
 
 char *rot13(char *p)
 {
-	int a;
+	int i = 0;
 
-	a = 0;
-	while (p[a])
+	while (p[i])
 	{
-		if (p[a] >= 'a' && p[a] <= 'z')
+		if ((p[i] >= 65 && p[i] <= 77) || (p[i] >= 97 && p[i] <= 109))
 		{
-			if (p[a] <= 'm')
-				p[a] += 13;
-			else
-				p[a] -= 13;
+			p[i] += 13;
 		}
-		if (p[a] >= 'A' && p[a] <= 'Z')
+		else if((p[i] >= 78 && p[i] <= 90) || (p[i] >= 110 && p[i] <= 122))
 		{
-			if (p[a] <= 'M')
-				p[a] += 13;
-			else
-				p[a] -= 13;
+			p[i] -= 13;
 		}
-		a++;
+		i++;
 	}
 	return (p);
 }
